@@ -7,14 +7,14 @@ print("=====================================================");
 db = input("Digite a Database do MYSQL: ")
 tabela = input("Digite a Tabela que deve ser usada: ")
 coluna = input("Digite a Coluna que deve ser usada: ")
-txt = input("Digite o nome do arquivo SQL em que a conversão será salva: ")
+sql = input("Digite o nome do arquivo SQL em que a conversão será salva: ")
 print("=====================================================");
 print("Digite as contas abaixo");
 print("Para sair digite: sair");
 print("=====================================================");
 conta = ""
 contador = 0
-sql = open(sql + ".sql", "w")
+arq = open(sql + ".sql", "w")
 while(conta != "sair"):
     conta = input()
     if(conta != "sair"):
